@@ -1,0 +1,10 @@
+<?php
+session_start();
+require('1/conn.php');
+if(!isset($_SESSION['user_name']))
+{
+    header("Location:1/login.php");
+}else{
+	   header("Location:1/home.php");
+}
+?>
